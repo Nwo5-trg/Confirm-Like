@@ -4,6 +4,7 @@
 
 using namespace geode::prelude;
 
+// the code for this mod is really dumb but it works so idc
 class $modify (LikeLayer, LikeItemLayer) {
     struct Fields {
         SEL_MenuHandler likeCallback;
@@ -15,12 +16,16 @@ class $modify (LikeLayer, LikeItemLayer) {
     bool init(LikeItemType p0, int p1, int p2) {
         if(!LikeItemLayer::init(p0, p1, p2)) return false;
         auto buttonMenu = this->getChildByType<CCLayer>(0)->getChildByType<CCMenu>(0);
-        m_fields->likeButton = buttonMenu->getChildByType<CCMenuItemSpriteExtra>(1);
-        m_fields->likeCallback = m_fields->likeButton->m_pfnSelector;
-        m_fields->likeButton->setTarget(this, menu_selector(LikeLayer::onLikeButton));
+        
+        if (Mod::get()->getSettingValue<bool>("like")) {
+            m_fields->likeButton = buttonMenu->getChildByType<CCMenuItemSpriteExtra>(1);
+            m_fields->likeCallback = m_fields->likeButton->m_pfnSelector;
+            m_fields->likeButton->setTarget(this, menu_selector(LikeLayer::onLikeButton));
+        } if (Mod::get()->getSettingValue<bool>("dislike")) {
         m_fields->dislikeButton = buttonMenu->getChildByType<CCMenuItemSpriteExtra>(2);
         m_fields->dislikeCallback = m_fields->dislikeButton->m_pfnSelector;
         m_fields->dislikeButton->setTarget(this, menu_selector(LikeLayer::onDislikeButton));
+        }
         return true;
     }
 

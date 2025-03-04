@@ -7,11 +7,23 @@
 	},
 	"id": "nwo5.confirm_like",
 	"name": "Confirm Like",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "Nwo5",
 	"description": "Confirm liking/disliking.",
 	"tags": ["enhancement", "offline"],
 	"links": {
 		"source": "https://github.com/Nwo5-trg/Confirm-Like"
+	},
+	"settings": {
+		"like": {
+			"type": "bool",
+			"name": "Enable Like Popup",
+			"default": true
+		},
+		"dislike": {
+			"type": "bool",
+			"name": "Enable Disike Popup",
+			"default": true
+		}
 	}
 }
