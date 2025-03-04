@@ -1,0 +1,17 @@
+{
+	"geode": "4.2.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074"
+	},
+	"id": "nwo5.confirm_like",
+	"name": "Confirm Like",
+	"version": "v1.0.0",
+	"developer": "Nwo5",
+	"description": "Confirm liking/disliking.",
+	"tags": ["enhancement", "offline"],
+	"links": {
+		"source": "https://github.com/Nwo5-trg/Confirm-Like"
+	}
+}
