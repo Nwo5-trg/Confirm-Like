@@ -7,7 +7,7 @@
 	},
 	"id": "nwo5.confirm_like",
 	"name": "Confirm Like",
-	"version": "v1.0.2",
+	"version": "v1.0.3",
 	"developer": "Nwo5",
 	"description": "Confirm liking/disliking.",
 	"tags": ["enhancement", "offline"],

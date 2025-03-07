@@ -30,8 +30,9 @@ class $modify (LikeLayer, LikeItemLayer) {
     }
 
     void onLikeButton (CCObject* sender) {
+        std::string text = m_itemType == LikeItemType::Level ? "level" : m_itemType == LikeItemType::LevelList ? "list" : "comment";
         geode::createQuickPopup(
-            "Confirm Like", "Are you sure you want to like this level? You cannot undo this.", "Cancel", "Ok",
+            "Confirm Like", "Are you sure you want to like this " + text + "? You cannot undo this.", "Cancel", "Ok",
             [&](auto, bool btn2) {
                 if (btn2) {
                     m_fields->likeButton->setTarget(this, m_fields->likeCallback);
@@ -42,8 +43,9 @@ class $modify (LikeLayer, LikeItemLayer) {
     }
 
     void onDislikeButton (CCObject* sender) {
+        std::string text = m_itemType == LikeItemType::Level ? "level" : m_itemType == LikeItemType::LevelList ? "list" : "comment";
         geode::createQuickPopup(
-            "Confirm Disike", "Are you sure you want to dislike this level? You cannot undo this.", "Cancel", "Ok",
+            "Confirm Disike", "Are you sure you want to dislike this " + text + "? You cannot undo this.", "Cancel", "Ok",
             [&](auto, bool btn2) {
                 if (btn2) {
                     m_fields->dislikeButton->setTarget(this, m_fields->dislikeCallback);
