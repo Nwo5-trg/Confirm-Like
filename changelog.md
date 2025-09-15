@@ -1,4 +1,7 @@
 
+## v1.0.4
+- Adapt to upcoming Node IDs changes
+
 ## v1.0.3
 - Change text when liking different things
 
