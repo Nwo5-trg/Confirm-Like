@@ -1,5 +1,5 @@
 {
-	"geode": "4.2.0",
+	"geode": "4.4.0",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
@@ -7,12 +7,15 @@
 	},
 	"id": "nwo5.confirm_like",
 	"name": "Confirm Like",
-	"version": "v1.0.3",
+	"version": "v1.0.4",
 	"developer": "Nwo5",
 	"description": "Confirm liking/disliking.",
 	"tags": ["enhancement", "offline"],
 	"links": {
 		"source": "https://github.com/Nwo5-trg/Confirm-Like"
+	},
+	"dependencies": {
+		"geode.node-ids": ">=1.21.1"
 	},
 	"settings": {
 		"like": {
