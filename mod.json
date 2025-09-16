@@ -1,23 +1,30 @@
 {
-	"geode": "4.4.0",
+	"geode": "4.8.0",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
-		"mac": "2.2074"
+		"mac": "2.2074",
+		"ios": "2.2074"
 	},
 	"id": "nwo5.confirm_like",
 	"name": "Confirm Like",
-	"version": "v1.0.4",
+	"version": "v1.1.0",
 	"developer": "Nwo5",
-	"description": "Confirm liking/disliking.",
+	"description": "confirm like or dislike",
 	"tags": ["enhancement", "offline"],
 	"links": {
-		"source": "https://github.com/Nwo5-trg/Confirm-Like"
+		"source": "https://github.com/Nwo5-trg/Confirm-Like",
+		"community": "https://discord.gg/AeFeYWGUxZ"
 	},
 	"dependencies": {
 		"geode.node-ids": ">=1.21.1"
 	},
 	"settings": {
+		"close": {
+			"type": "bool",
+			"name": "Close On Cancel",
+			"default": true
+		},
 		"like": {
 			"type": "bool",
 			"name": "Enable Like Popup",

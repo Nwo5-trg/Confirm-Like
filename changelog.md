@@ -1,15 +1,17 @@
-
-## v1.0.4
-- Adapt to upcoming Node IDs changes
+## v1.1.0
+- **Added** ios support ig
+- **Added** rewrote the whole thing and prolly have support for node ids (eryyyyyy)
+- **Added** reformatted changelog
+- **Added** close popup option
 
 ## v1.0.3
-- Change text when liking different things
+- **Fixed** Change text when liking different things
 
 ## v1.0.2
-- Fixed grammar
+- **Fixed** grammar
 
 ## v1.0.1
-- Add option to toggle either popup on or off.
+- **Added** option to toggle either popup on or off.
 
 ## v1.0.0
 - Initial Release
